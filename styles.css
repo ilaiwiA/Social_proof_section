@@ -1,0 +1,192 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+:root {
+  /* ### Primary */
+
+  --very__dark__magenta: hsl(300, 43%, 22%);
+  --soft__pink: hsl(333, 80%, 67%);
+
+  /* ### Neutral */
+  --dark__grayish__magenta: hsl(303, 10%, 53%);
+  --light__grayish__magenta: hsl(300, 24%, 96%);
+
+  /* font family */
+  --ff_main: "League Spartan", sans-serif;
+}
+
+body {
+  font-family: var(--ff_main);
+  text-align: center;
+}
+
+main {
+  margin: 1em;
+  margin-top: 3em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2em;
+}
+
+.top_container {
+  display: flex;
+  flex-direction: column;
+  gap: 2em;
+}
+
+.title-container {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+}
+
+.title-container h1 {
+  color: var(--very__dark__magenta);
+  font-size: 2.5em;
+  font-weight: 700;
+}
+
+.title-container p {
+  line-height: 1.5em;
+  color: var(--dark__grayish__magenta);
+  font-weight: 500;
+}
+
+.review-container {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75em;
+}
+
+.review-container section {
+  background-color: var(--light__grayish__magenta);
+  color: var(--very__dark__magenta);
+  border-radius: 0.5em;
+  font-weight: 700;
+  padding: 1em;
+}
+
+.stars {
+  margin-bottom: 0.5em;
+}
+
+.testimonial-container {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+}
+
+.testimonial-panel {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+  border-radius: 0.75em;
+  background-color: var(--very__dark__magenta);
+  padding: 1.5em;
+}
+
+.panel-person {
+  display: flex;
+  align-items: center;
+  gap: 1em;
+  font-weight: 700;
+}
+
+.panel-person span {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25em;
+}
+
+.panel-name {
+  color: white;
+}
+.panel-title {
+  font-weight: 400;
+  color: var(--soft__pink);
+}
+
+.panel-person img {
+  border-radius: 50%;
+  width: 42px;
+  background-color: black;
+}
+
+blockquote {
+  color: white;
+  font-weight: 400;
+  line-height: 1.35em;
+  text-align: left;
+}
+
+@media screen and (min-width: 1000px) {
+  main {
+    max-width: 1200px;
+    display: flex;
+    margin: 0 auto;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    /* padding: 0 7.5em; */
+    gap: 2.5em;
+  }
+
+  .top_container {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .title-container {
+    max-width: 450px;
+    text-align: left;
+  }
+
+  .title-container h1 {
+    font-size: 3.25em;
+  }
+
+  .review-container section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .stars {
+    margin-bottom: 0;
+    margin-right: 1em;
+  }
+
+  .testimonial-container {
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+  }
+  .testimonial-panel {
+    max-width: 300px;
+  }
+
+  #review_1 {
+    position: relative;
+    right: 100px;
+  }
+
+  #review_2 {
+    position: relative;
+    right: 50px;
+  }
+
+  #panel_2 {
+    position: relative;
+    top: 25px;
+  }
+
+  #panel_3 {
+    position: relative;
+    top: 50px;
+  }
+}
